@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "airtable-mcp-server"
+version = "0.1.0"
+description = "MCP server for Airtable - access your bases, tables, and records from Claude Desktop"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.scripts]
+airtable-mcp = "airtable_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/airtable_mcp"]

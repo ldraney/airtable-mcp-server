@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "airtable": {
+      "command": "uv",
+      "args": ["run", "--directory", "C:\\Users\\YOUR_USERNAME\\airtable-mcp-server", "airtable-mcp"],
+      "env": {
+        "AIRTABLE_API_KEY": "pat_your_personal_access_token_here"
+      }
+    }
+  }
+}
