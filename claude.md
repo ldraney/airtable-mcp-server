@@ -80,6 +80,49 @@ tail -50 "%APPDATA%\Claude\logs\mcp-server-airtable.log"
 
 ## What's Left
 - [ ] Test create_record and update_record with real data
-- [ ] Update README with install instructions
-- [ ] Record 2-min Loom demo
+- [ ] Test error handling (bad API key)
+- [ ] Record Loom demo
 - [ ] Submit Upwork proposal
+
+## Loom Demo Script (60-90 sec)
+
+**Opening (5 sec):**
+> "Here's a standalone Airtable MCP server - one-click install, no JSON config editing. API key is prompted during setup. Let me show you it working..."
+
+**1. Install (10 sec)**
+- Drag .mcpb into Claude Desktop
+- Show API key prompt
+- Extension enabled
+
+**2. Auth Works (10 sec)**
+- "List my Airtable bases"
+- Show actual bases appear
+
+**3. CRUD Operations (30-45 sec)**
+- "What tables are in [base]?" → tables appear
+- "Create a record in [table] with Name='Demo' and Status='Active'"
+- Switch to Airtable UI → show record exists
+
+**4. Error Handling (optional, 10 sec)**
+- Show graceful error message for bad API key
+
+**Closing:**
+> "Clean standalone server. No Pipedream dependency. Ready to build more integrations like this."
+
+## Proposal Text (Draft)
+```
+I built a working Airtable MCP server as a proof of concept:
+
+✅ One-click install (.mcpb extension format)
+✅ API key prompted during setup (no manual config editing)
+✅ All CRUD operations: list bases, tables, records + create/update
+✅ Clean error handling
+
+Video demo attached showing it working in Claude Desktop.
+
+I can build similar standalone MCP servers for other Pipedream integrations.
+Timeline depends on API complexity - simple auth like Airtable is fast,
+OAuth flows need more work.
+
+Happy to discuss scope and priorities.
+```
